@@ -23,7 +23,8 @@ import javax.persistence.UniqueConstraint;
 
 @Entity
 @Table(name = "author", catalog = "progra3_exa2", uniqueConstraints = {
-@UniqueConstraint(columnNames = "id_author")})
+@UniqueConstraint(columnNames = "id_author"),
+@UniqueConstraint(columnNames = "name")})
 public class Author {
     private int id_author;
     private String name;
@@ -67,7 +68,7 @@ public class Author {
      * 
      * @return
      */
-    @Column(name = "name", unique = false, nullable = false)
+    @Column(name = "name", unique = true, nullable = false)
     public String getName() {
         return name;
     }
