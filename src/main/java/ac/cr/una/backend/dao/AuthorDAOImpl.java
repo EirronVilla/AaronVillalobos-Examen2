@@ -28,9 +28,9 @@ public class AuthorDAOImpl implements AuthorDAO {
      * @return 
      */
     @Override
-    public Author findByName(int id) {
+    public Author findByName(String id) {
         Author author = null;
-        Query query = session.createQuery("from author where id_author = :id ");
+        Query query = session.createQuery("from author where name = :id ");
         query.setParameter("id", id);
 
         if (query.list().size() > 0) {

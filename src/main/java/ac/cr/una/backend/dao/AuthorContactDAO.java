@@ -23,10 +23,8 @@ public interface AuthorContactDAO {
     
     /**
      * 
-     * @param authorcontact
      * @return 
      */
-
     public List<AuthorContact> findAll ();
     
     /**

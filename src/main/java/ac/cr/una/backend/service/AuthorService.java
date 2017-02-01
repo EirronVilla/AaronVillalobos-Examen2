@@ -16,7 +16,7 @@ public interface AuthorService {
     public boolean deleteAll();
     public AuthorContact save(AuthorContact authorContact);
     public List<AuthorContact> findAll();
-    public Author findAuthorByName(int id);
+    public Author findAuthorByName(String id);
     
     
 }

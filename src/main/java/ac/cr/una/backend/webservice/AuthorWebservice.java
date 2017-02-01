@@ -54,9 +54,9 @@ public class AuthorWebservice {
     }
     
     @GET
-    @Path("/{id_author}")
+    @Path("/{name}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Author getAuthorByName(@PathParam("id_author") int id){
+    public Author getAuthorByName(@PathParam("name") String id){
         Author author = null;
         authorDAO = new AuthorDAOImpl();
         authorContactDAO = new AuthorContactDAOImpl();

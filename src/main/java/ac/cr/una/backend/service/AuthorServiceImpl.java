@@ -62,7 +62,7 @@ public class AuthorServiceImpl implements AuthorService{
     }
 
     @Override
-    public Author findAuthorByName(int id) {
+    public Author findAuthorByName(String id) {
         return authorDAO.findByName(id);
     }
     

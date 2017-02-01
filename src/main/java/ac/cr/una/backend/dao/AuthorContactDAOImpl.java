@@ -31,6 +31,7 @@ public class AuthorContactDAOImpl implements AuthorContactDAO{
     public AuthorContact save(AuthorContact authorcontact) {
         
         session.beginTransaction();
+        session.save(authorcontact.getId_author());
         session.save(authorcontact);
         session.getTransaction().commit();
         

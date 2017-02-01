@@ -18,9 +18,9 @@ import java.util.List;
 public interface AuthorDAO {
     /**
      * 
-     * @param id
+     * @param name
      * @return 
      */
-    public Author findByName (int id);
+    public Author findByName (String name);
     
 }
